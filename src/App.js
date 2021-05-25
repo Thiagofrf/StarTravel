@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Switch>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" component={Home} />
       </Switch>
       <Footer />
     </BrowserRouter>
