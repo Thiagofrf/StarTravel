@@ -5,10 +5,12 @@ const TravelCard = ({ image, category, title, description, flag }) => {
   return (
     <div className="card-container">
       <img src={image} alt="Destino" />
-      <p>{category}</p>
-      <p>{title}</p>
-      <p>{description}</p>
-      <span>{flag}</span>
+      <p className="category">{category}</p>
+      <p className="title">{title}</p>
+      <p className="description">{description}</p>
+      <span className="flag">
+        <p>{flag}</p>
+      </span>
     </div>
   );
 };

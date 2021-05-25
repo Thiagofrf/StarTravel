@@ -11,7 +11,7 @@ const Home = () => {
       </h1>
       <TravelCard
         category="Destinos"
-        title="Jakku"
+        title="Viaje para Jakku"
         description="Absolutamente nada para fazer aqui!"
         flag="Inclui um acompanhante"
         image={JakkuImg}
