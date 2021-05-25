@@ -9,13 +9,36 @@ const Home = () => {
       <h1>
         <span>Viaje na velocidade da luz</span> para destinos incríveis
       </h1>
-      <TravelCard
-        category="Destinos"
-        title="Viaje para Jakku"
-        description="Absolutamente nada para fazer aqui!"
-        flag="Inclui um acompanhante"
-        image={JakkuImg}
-      />
+      <div className="travel-card-carousel">
+        <TravelCard
+          category="Destinos"
+          title="Viaje para Jakku"
+          description="Absolutamente nada para fazer aqui!"
+          flag="Inclui um acompanhante"
+          image={JakkuImg}
+        />
+        <TravelCard
+          category="Destinos"
+          title="Viaje para Jakku"
+          description="Absolutamente nada para fazer aqui!"
+          flag="Inclui um acompanhante"
+          image={JakkuImg}
+        />
+        <TravelCard
+          category="Destinos"
+          title="Viaje para Jakku"
+          description="Absolutamente nada para fazer aqui!"
+          flag="Inclui um acompanhante"
+          image={JakkuImg}
+        />
+        <TravelCard
+          category="Destinos"
+          title="Viaje para Jakku"
+          description="Absolutamente nada para fazer aqui!"
+          flag="Inclui um acompanhante"
+          image={JakkuImg}
+        />
+      </div>
     </div>
   );
 };
