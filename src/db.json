@@ -1,0 +1,36 @@
+{
+  "destinos": [
+    {
+      "id": 1,
+      "category": "Destinos",
+      "title": "Viaje para Jakku",
+      "description": "Absolutamente nada para fazer aqui!",
+      "flag": "Inclui um acompanhante",
+      "image": "../../img/JakkuImg.png"
+    },
+    {
+      "id": 1,
+      "category": "Destinos",
+      "title": "Viaje para Mustafar",
+      "description": "Muito fogo e lava. Visite o castelo de Darth Vader.",
+      "flag": "Inclui bagagem de mão",
+      "image": "../../img/mustafar.jpg"
+    },
+    {
+      "id": 1,
+      "category": "Destinos",
+      "title": "Viaje para Naboo",
+      "description": "Terra de Padmé e dos Gungans. Muito verde e paisagens sensacionais!",
+      "flag": "Inclui uma mochila ou bolsa",
+      "image": "../../img/naboo.jpg"
+    },
+    {
+      "id": 1,
+      "category": "Destinos",
+      "title": "Viaje para Coruscant",
+      "description": "Um lugar cheio de prédios e da mais alta tecnologia da galáxia. Aqui surgiu e ruiu a República e o Império.",
+      "flag": "Inclui hospedagem.",
+      "image": "../../img/coruscant.jpg"
+    }
+  ]
+}
