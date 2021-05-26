@@ -26,14 +26,14 @@ const Home = () => {
       </h1>
       <div className="travel-card-carousel">
         {destinations.map((item) => {
-          render(
+          return (
             <TravelCard
               category={item.category}
               title={item.title}
               description={item.description}
               flag={item.flag}
               image={item.image}
-            />,
+            />
           );
         })}
       </div>
