@@ -81,13 +81,13 @@
       "category": "Voo + Hospedagem",
       "title": "Pacotes para Hoth",
       "description": "Voo e hospedagem para um lugar que combina muito com aqueles que gostam de frio e monstros.",
-      "flag": "Reservas únicas.",
+      "flag": "Hospedagem com aquecedor",
       "image": "/hoth.jpg"
     },
     {
       "id": 3,
       "category": "Voo + Hospedagem",
-      "title": "Hospede-se em uma Nave Imperial",
+      "title": "Pacotes para Kamino",
       "description": "Voo e hospedagem para passar suas férias dentro de prédios no meio da água e uma tempestade infinita.",
       "flag": "Almoço incluso",
       "image": "/kamino.jpg"
@@ -95,10 +95,10 @@
     {
       "id": 4,
       "category": "Voo + Hospedagem",
-      "title": "Hospede-se nas ruínas da Estrela da Morte",
+      "title": "Pacotes para Endor",
       "description": "Voo e hospedagem para um lugar bem equilibrado, com Ewoks e um símbolo da Resistência.",
-      "flag": "Jantar incluso",
-      "image": "/alderaan.jpg"
+      "flag": "Almoço e jantar inclusos",
+      "image": "/endor.jpg"
     }
   ],
   "naves": [
@@ -133,6 +133,18 @@
       "description": "Nave pequena, mas muito veloz e ágil. Perfeita para viagens rápidas e urgentes.",
       "flag": "Capacete da resistência incluso.",
       "image": "/x-wing.jpg"
+    }
+  ],
+  "agendamentos": [
+    {
+      "id": 1,
+      "destino": "Jakku",
+      "dataIda": "2021/07/20",
+      "dataVolta": "2021/07/27",
+      "pessoas": 5
+    },
+    {
+      "id": 2
     }
   ]
 }

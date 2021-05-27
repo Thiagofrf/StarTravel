@@ -17,3 +17,11 @@
     justify-content: space-around;
   }
 }
+
+@media (max-width: 767px) {
+  .home-container {
+    .travel-card-carousel {
+      display: block;
+    }
+  }
+}

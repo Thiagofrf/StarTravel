@@ -7,10 +7,18 @@ const Header = () => {
     <div className="headerContainer">
       <img src={LogoStarTravel} alt="Logo Star Travel" />
       <ul>
-        <li>Destinos</li>
-        <li>Hospedagens</li>
-        <li>Pacotes</li>
-        <li>Naves</li>
+        <li>
+          <a href="#destinos">Destinos</a>
+        </li>
+        <li>
+          <a href="#hospedagens">Hospedagens</a>{' '}
+        </li>
+        <li>
+          <a href="#pacotes">Pacotes</a>
+        </li>
+        <li>
+          <a href="#naves">Naves</a>
+        </li>
       </ul>
     </div>
   );
