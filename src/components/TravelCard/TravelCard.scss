@@ -3,9 +3,10 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 297px;
-  height: 370px;
+  height: 390px;
   margin-top: 5rem;
-  transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 5rem;
 
   &:hover {
     box-shadow: 2px 2px 10px 2px #888888;

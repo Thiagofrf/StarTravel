@@ -6,31 +6,133 @@
       "title": "Viaje para Jakku",
       "description": "Absolutamente nada para fazer aqui!",
       "flag": "Inclui um acompanhante",
-      "image": "../../img/JakkuImg.png"
+      "image": "/JakkuImg.png"
     },
     {
-      "id": 1,
+      "id": 2,
       "category": "Destinos",
       "title": "Viaje para Mustafar",
       "description": "Muito fogo e lava. Visite o castelo de Darth Vader.",
       "flag": "Inclui bagagem de mão",
-      "image": "../../img/mustafar.jpg"
+      "image": "/mustafar.jpg"
     },
     {
-      "id": 1,
+      "id": 3,
       "category": "Destinos",
       "title": "Viaje para Naboo",
       "description": "Terra de Padmé e dos Gungans. Muito verde e paisagens sensacionais!",
       "flag": "Inclui uma mochila ou bolsa",
-      "image": "../../img/naboo.jpg"
+      "image": "/naboo.jpg"
     },
     {
-      "id": 1,
+      "id": 4,
       "category": "Destinos",
       "title": "Viaje para Coruscant",
       "description": "Um lugar cheio de prédios e da mais alta tecnologia da galáxia. Aqui surgiu e ruiu a República e o Império.",
       "flag": "Inclui hospedagem.",
-      "image": "../../img/coruscant.jpg"
+      "image": "/coruscant.jpg"
+    }
+  ],
+  "hospedagens": [
+    {
+      "id": 1,
+      "category": "Hospedagens",
+      "title": "Hospede-se no Templo Jedi",
+      "description": "Uma das maiores hospedagens da galáxia, muitos quartos e resort no templo.",
+      "flag": "Café da manhã incluso",
+      "image": "/templo-jedi.jpg"
+    },
+    {
+      "id": 2,
+      "category": "Hospedagens",
+      "title": "Hospede-se na Cabana do Yoda",
+      "description": "Para aqueles que querem um lugar mais reservado e afastado, a cabana do Yoda é muito recomendado.",
+      "flag": "Reservas únicas.",
+      "image": "/yoda-cabana.jpg"
+    },
+    {
+      "id": 3,
+      "category": "Hospedagens",
+      "title": "Hospede-se em uma Nave Imperial",
+      "description": "Para aqueles que gostam de movimento, uma das melhores escolhas é a nave imperial. Espaçosa e com belas paisagens.",
+      "flag": "Almoço incluso",
+      "image": "/nave-imperial.jpg"
+    },
+    {
+      "id": 4,
+      "category": "Hospedagens",
+      "title": "Hospede-se nas ruínas da Estrela da Morte",
+      "description": "Para aqueles que gostam de aventuras e lugares mais 'sombrios', esta é a melhor recomendação.",
+      "flag": "Hospedagem de frente para o mar.",
+      "image": "/death-star-ruin.jpg"
+    }
+  ],
+  "pacotes": [
+    {
+      "id": 1,
+      "category": "Voo + Hospedagem",
+      "title": "Pacotes para Tatooine",
+      "description": "Voo e hospedagem para passar seus dias em um dos lugares mais vazios do universo.",
+      "flag": "Café da manhã incluso",
+      "image": "/tatooine.png"
+    },
+    {
+      "id": 2,
+      "category": "Voo + Hospedagem",
+      "title": "Pacotes para Hoth",
+      "description": "Voo e hospedagem para um lugar que combina muito com aqueles que gostam de frio e monstros.",
+      "flag": "Reservas únicas.",
+      "image": "/hoth.jpg"
+    },
+    {
+      "id": 3,
+      "category": "Voo + Hospedagem",
+      "title": "Hospede-se em uma Nave Imperial",
+      "description": "Voo e hospedagem para passar suas férias dentro de prédios no meio da água e uma tempestade infinita.",
+      "flag": "Almoço incluso",
+      "image": "/kamino.jpg"
+    },
+    {
+      "id": 4,
+      "category": "Voo + Hospedagem",
+      "title": "Hospede-se nas ruínas da Estrela da Morte",
+      "description": "Voo e hospedagem para um lugar bem equilibrado, com Ewoks e um símbolo da Resistência.",
+      "flag": "Jantar incluso",
+      "image": "/alderaan.jpg"
+    }
+  ],
+  "naves": [
+    {
+      "id": 1,
+      "category": "Naves",
+      "title": "Viaje dentro da Tie Fighter",
+      "description": "Nave pequena, mas muito potente e preparada para qualquer situação.",
+      "flag": "Blaster de brinde.",
+      "image": "/tie-fighter.jpg"
+    },
+    {
+      "id": 2,
+      "category": "Naves",
+      "title": "Viaje dentro da Millennium Falcon",
+      "description": "A nave mais rápida da galáxia. Muito espaçosa e confortável para longas viagens.",
+      "flag": "Quartos dentro da nave inclusos.",
+      "image": "/millenium-falcon.jpg"
+    },
+    {
+      "id": 3,
+      "category": "Naves",
+      "title": "Viaje dentro da Slave One",
+      "description": "Uma das naves mais diferenciadas, a Slave One compensa seu desconforto com uma experiência única.",
+      "flag": "1g de Beskar incluso como brinde.",
+      "image": "/slave-one.jpg"
+    },
+    {
+      "id": 4,
+      "category": "Naves",
+      "title": "Viaje dentro da X-Wing",
+      "description": "Nave pequena, mas muito veloz e ágil. Perfeita para viagens rápidas e urgentes.",
+      "flag": "Capacete da resistência incluso.",
+      "image": "/x-wing.jpg"
     }
   ]
 }

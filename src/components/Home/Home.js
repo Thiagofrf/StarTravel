@@ -1,14 +1,12 @@
 import React, { useEffect } from 'react';
 import './Home.scss';
 import TravelCard from '../TravelCard/TravelCard';
-import JakkuImg from '../../img/JakkuImg.png';
-import MustafarImg from '../../img/mustafar.jpg';
-import NabooImg from '../../img/naboo.jpg';
-import CoruscantImg from '../../img/coruscant.jpg';
-import { render } from '@testing-library/react';
 
 const Home = () => {
   const [destinations, setDestinations] = React.useState([]);
+  const [hospedagens, setHospedagens] = React.useState([]);
+  const [pacotes, setPacotes] = React.useState([]);
+  const [naves, setNaves] = React.useState([]);
 
   useEffect(() => {
     fetch('http://localhost:3000/destinos')
@@ -18,7 +16,30 @@ const Home = () => {
       });
   }, []);
 
-  console.log('destinos', destinations);
+  useEffect(() => {
+    fetch('http://localhost:3000/hospedagens')
+      .then((res) => res.json())
+      .then((result) => {
+        setHospedagens(result);
+      });
+  }, []);
+
+  useEffect(() => {
+    fetch('http://localhost:3000/pacotes')
+      .then((res) => res.json())
+      .then((result) => {
+        setPacotes(result);
+      });
+  }, []);
+
+  useEffect(() => {
+    fetch('http://localhost:3000/naves')
+      .then((res) => res.json())
+      .then((result) => {
+        setNaves(result);
+      });
+  }, []);
+
   return (
     <div className="home-container">
       <h1>
@@ -33,6 +54,59 @@ const Home = () => {
               description={item.description}
               flag={item.flag}
               image={item.image}
+              key={item.id}
+            />
+          );
+        })}
+      </div>
+      <h1>
+        <span>Encontre a hospedagem ideal</span> para sua jornada
+      </h1>
+      <div className="travel-card-carousel">
+        {hospedagens.map((item) => {
+          return (
+            <TravelCard
+              category={item.category}
+              title={item.title}
+              description={item.description}
+              flag={item.flag}
+              image={item.image}
+              key={item.id}
+            />
+          );
+        })}
+      </div>
+      <h1>
+        <span>Compre seu pacotes dos sonhos</span> e aproveite ao máximo sua
+        aventura Jedi
+      </h1>
+      <div className="travel-card-carousel">
+        {pacotes.map((item) => {
+          return (
+            <TravelCard
+              category={item.category}
+              title={item.title}
+              description={item.description}
+              flag={item.flag}
+              image={item.image}
+              key={item.id}
+            />
+          );
+        })}
+      </div>
+      <h1>
+        <span>Viaje com as melhores naves</span> para o seu objetivo
+      </h1>
+      <div className="travel-card-carousel">
+        {naves.map((item) => {
+          return (
+            <TravelCard
+              category={item.category}
+              title={item.title}
+              description={item.description}
+              flag={item.flag}
+              image={item.image}
+              key={item.id}
             />
           );
         })}

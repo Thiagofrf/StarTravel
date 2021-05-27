@@ -4,7 +4,7 @@ import './TravelCard.scss';
 const TravelCard = ({ image, category, title, description, flag }) => {
   return (
     <div className="card-container">
-      <img src={image} alt="Destino" />
+      <img src={require('../../img' + image).default} alt="Destino" />
       <p className="category">{category}</p>
       <p className="title">{title}</p>
       <p className="description">{description}</p>
