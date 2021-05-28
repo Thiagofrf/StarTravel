@@ -5,7 +5,7 @@ import './header.scss';
 const Header = () => {
   return (
     <div className="headerContainer">
-      <img src={LogoStarTravel} alt="Logo Star Travel" />
+      <a href="/"><img src={LogoStarTravel} alt="Logo Star Travel" /></a> 
       <ul>
         <li>
           <a href="#destinos">Destinos</a>
@@ -18,6 +18,9 @@ const Header = () => {
         </li>
         <li>
           <a href="#naves">Naves</a>
+        </li>
+        <li>
+          <a href="/meus-agendamentos">Meus Agendamentos</a>
         </li>
       </ul>
     </div>

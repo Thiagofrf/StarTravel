@@ -1,11 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect } from 'react';
 import './DateForm.scss';
+import axios from 'axios';
 
 const DateForm = () => {
   const [destination, setDestination] = React.useState();
   const [dataIda, setDataIda] = React.useState();
   const [dataVolta, setDataVolta] = React.useState();
   const [pessoas, setPessoas] = React.useState();
+  const [destinationOptions, setDestinationOptions] = React.useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:3000/destinos')
+      .then((res) => res.json())
+      .then((result) => {
+        setDestinationOptions(result);
+      });
+  }, []);
+
 
   const myChangeHandlerDestination = (event) => {
     setDestination(event.target.value);
@@ -23,21 +34,19 @@ const DateForm = () => {
     setPessoas(event.target.value);
   };
 
+  console.log(destination, dataIda, dataVolta, pessoas)
+
   const sendForm = () => {
-    const requestOptions = {
-      method: 'POST',
-      header: { 'Content-Type': ' application/json' },
-      body: JSON.stringify({
-        destino: destination,
-        dataIda: dataIda,
-        dataVolta: dataVolta,
-        pessoas: pessoas,
-      }),
-    };
-    console.log(requestOptions);
-    fetch('http://localhost:3000/agendamentos', requestOptions).then(
-      (response) => response.json(),
-    );
+    axios.post('http://localhost:3000/agendamentos', {
+      destino: destination,
+      dataIda: dataIda,
+      dataVolta: dataVolta,
+      pessoas: pessoas,
+    }).then(resp => {
+      console.log(resp.data)
+    })
+
+    window.location.href = '/meus-agendamentos'
   };
 
   return (
@@ -46,13 +55,15 @@ const DateForm = () => {
         <p>Reserve uma viagem na velocidade da luz</p>
         <div className="inputs-container">
           <div className="destination-input">
-            <label htmlFor="destinationInput">Destino</label>
-            <input
-              type="text"
-              id="destinationInput"
-              placeholder="Insira um destino ou hospedagem."
-              onChange={myChangeHandlerDestination}
-            />
+            <label htmlFor="destinationSelect">Destino</label>
+            <select name="destinationSelect" id="destinationInput" onChange={myChangeHandlerDestination}>
+             <option selected disabled>Selecione um destino</option>
+             {destinationOptions.map((item) => {
+               return(
+                  <option name={item.title}>{item.title}</option>
+               )
+             })}
+            </select>
           </div>
           <div className="date-input">
             <label htmlFor="entryInput">Datas (entrada e saída)</label>
@@ -81,7 +92,7 @@ const DateForm = () => {
             />
           </div>
           <button type="submit" onClick={sendForm}>
-            Buscar
+            Agendar
           </button>
         </div>
       </div>

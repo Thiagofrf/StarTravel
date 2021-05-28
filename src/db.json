@@ -136,15 +136,6 @@
     }
   ],
   "agendamentos": [
-    {
-      "id": 1,
-      "destino": "Jakku",
-      "dataIda": "2021/07/20",
-      "dataVolta": "2021/07/27",
-      "pessoas": 5
-    },
-    {
-      "id": 2
-    }
+    
   ]
 }
